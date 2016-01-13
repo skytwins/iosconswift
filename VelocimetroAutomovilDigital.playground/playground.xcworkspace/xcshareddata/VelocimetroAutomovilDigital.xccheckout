@@ -7,18 +7,18 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>3B2F8F6C-9A95-4251-94AA-894886F0706D</string>
 	<key>IDESourceControlProjectName</key>
-	<string>VelocimetroAutomovilDigital</string>
+	<string>playground</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>9FC1D2775C34BE79CE1690C4956284B7A13C3436</key>
 		<string>https://github.com/skytwins/iosconswift.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>VelocimetroAutomovilDigital.playground</string>
+	<string>VelocimetroAutomovilDigital.playground/playground.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>9FC1D2775C34BE79CE1690C4956284B7A13C3436</key>
-		<string>..</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/skytwins/iosconswift.git</string>

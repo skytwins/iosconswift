@@ -14,40 +14,40 @@ enum Velocidades: Int{
 }
 
 class Auto {
-    var velocidades = Velocidades(velocidadInicial: Velocidades.Apagado)
+    var velocidad = Velocidades(velocidadInicial: Velocidades.Apagado)
     
-    init() {
-        self.velocidades = Velocidades.Apagado
+    init(velocidadInicial: Velocidades) {
+        self.velocidad = velocidadInicial
     }
     
     func cambioDeVelocidad() -> (actual: Int, velocidadEnCadena: String) {
         
-        var velocidad: Int
+        var velocidadactual: Int
         var velocidadencadena: String
         
-        velocidad = velocidades.rawValue
-        switch velocidades {
+        velocidadactual = velocidad.rawValue
+        switch velocidad {
         case .Apagado:
-            velocidadencadena = "Velocidad Apagado"
-            velocidades = Velocidades.VelocidadBaja
+            velocidadencadena = "Apagado"
+            velocidad = Velocidades.VelocidadBaja
         case .VelocidadBaja:
             velocidadencadena = "Velocidad baja"
-            velocidades = Velocidades.VelocidadMedia
+            velocidad = Velocidades.VelocidadMedia
         case .VelocidadMedia:
-            velocidadencadena = "Velocidad Media"
-            velocidades = Velocidades.VelocidadAlta
+            velocidadencadena = "Velocidad media"
+            velocidad = Velocidades.VelocidadAlta
         case .VelocidadAlta:
-            velocidadencadena = "Velocidad Alta"
-            velocidades = Velocidades.VelocidadMedia
+            velocidadencadena = "Velocidad alta"
+            velocidad = Velocidades.VelocidadMedia
         }
-        return (velocidad, velocidadencadena)
+        return (velocidadactual, velocidadencadena)
     }
 }
 
-//Prueba de la clase Auto
-var auto = Auto()
+//Instanciación de la clase Auto inicializando la propiedad velocidad en "Apagado"
+var auto = Auto(velocidadInicial: Velocidades.Apagado)
 for i in 1...20 {
     let (actual, velocidadEnCadena) = auto.cambioDeVelocidad()
-    println("\(actual), \(velocidadEnCadena)")
+    println("\(i). \(actual), \(velocidadEnCadena)")
 }
 
